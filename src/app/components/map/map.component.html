@@ -19,37 +19,28 @@
                 height="2200"
                 href="../../assets/Glasgow_Tower.jpg"
             ></image>
-            
-            <!--Access Controls-->
-            <image *ngIf="!isCompleted('Puzzle01')" routerLink="/puzzle01" height="60" width="60" x="965" y="1750" href="../../../assets/danger.png"
-                xlink:title="Access Controls"></image>
-            <image *ngIf="isCompleted('Puzzle01')" routerLink="/puzzle01" height="60" width="60" x="965" y="1750" href="../../../assets/green_tick.JPG"
-                xlink:title="Access Controls"></image>
-            <!--Lift Operations-->
-            <image *ngIf="!isCompleted('Puzzle02')" routerLink="/puzzle02" height="60" width="60" x="980" y="400" href="../../../assets/danger.png"
-                xlink:title="Access Controls"></image>
-            <image *ngIf="isCompleted('Puzzle02')" routerLink="/puzzle02" height="60" width="60" x="980" y="400" href="../../../assets/green_tick.JPG"
-                xlink:title="Access Controls"></image>    
-            <!--Weather Controls - Vulnerable Website-->
-            <image *ngIf="!isCompleted('Puzzle03')" routerLink="/puzzle03" height="60" width="60" x="1140" y="300" href="../../../assets/danger.png"
-                xlink:title="Access Controls"></image>
-            <image *ngIf="isCompleted('Puzzle03')" routerLink="/puzzle03" height="60" width="60" x="1140" y="300" href="../../../assets/green_tick.JPG"
-                xlink:title="Access Controls"></image>    
-            <!--Weather Controls - Vulnerable Machine-->
-            <image *ngIf="!isCompleted('Puzzle04')" routerLink="/puzzle04" height="60" width="60" x="970" y="1300" href="../../../assets/danger.png"
-                xlink:title="Access Controls"></image>
-            <image *ngIf="isCompleted('Puzzle04')" routerLink="/puzzle04" height="60" width="60" x="970" y="1300" href="../../../assets/green_tick.JPG"
-                xlink:title="Access Controls"></image> 
-            <!--Tower Brakes/Alignment-->
-            <image *ngIf="!isCompleted('Puzzle05')" routerLink="/puzzle05" height="60" width="60" x="1030" y="1650" href="../../../assets/danger.png"
-                xlink:title="Access Controls"></image>
-            <image *ngIf="isCompleted('Puzzle05')" routerLink="/puzzle05" height="60" width="60" x="1030" y="1650" href="../../../assets/green_tick.JPG"
-                xlink:title="Access Controls"></image>   
-            <!--Climate Control-->
-            <image *ngIf="!isCompleted('Puzzle06')" routerLink="/puzzle06" height="60" width="60" x="1040" y="900" href="../../../assets/danger.png"
-                xlink:title="Access Controls"></image>
-            <image *ngIf="isCompleted('Puzzle06')" routerLink="/puzzle06" height="60" width="60" x="1040" y="900" href="../../../assets/green_tick.JPG"
-                xlink:title="Access Controls"></image>                                                                          
+
+            <g *ngIf="!isCompleted('Puzzle01')" routerLink="/puzzle01" width="60" height="60" transform="translate(965, 1750)" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1">
+                <path d="M29.0001 55.3846C36.5019 55.3846 43.6965 52.467 49.0011 47.2737C54.3057 42.0804 57.2858 35.0368 57.2858 27.6923C57.2858 20.3479 54.3057 13.3042 49.0011 8.11089C43.6965 2.91757 36.5019 0 29.0001 0C21.4982 0 14.3036 2.91757 8.99905 8.11089C3.69445 13.3042 0.714355 20.3479 0.714355 27.6923C0.714355 35.0368 3.69445 42.0804 8.99905 47.2737C14.3036 52.467 21.4982 55.3846 29.0001 55.3846Z" fill="#219653"/>
+                <path d="M41.7389 22.4405L27.596 36.2867C26.5574 37.3035 24.878 37.3035 23.8504 36.2867L20.3147 32.8251L16.779 29.3636C15.7403 28.3468 15.7403 26.7025 16.779 25.6965C17.8176 24.6905 19.497 24.6797 20.5246 25.6965L25.7177 30.7806L37.9822 18.7626C39.0208 17.7458 40.7003 17.7458 41.7278 18.7626C42.7554 19.7794 42.7665 21.4237 41.7278 22.4297L41.7389 22.4405Z" fill="white"/>
+            </g>
+
+            <g *ngIf="!isCompleted('Puzzle02')" routerLink="/puzzle02" width="60" height="60" transform="translate(980, 400)" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false" tabindex="-1">
+                <g clip-path="url(#clip0_110_1504)">
+                <path d="M29.9959 1.875C31.556 1.875 32.9952 2.81669 33.7862 4.36105L57.5167 50.5664C58.3187 52.1233 58.3187 54.0444 57.5387 55.6013C56.7586 57.1582 55.2975 58.125 53.7264 58.125H6.26548C4.69443 58.125 3.23325 57.1582 2.45322 55.6013C1.67319 54.0444 1.68418 52.1108 2.47519 50.5664L26.2057 4.36105C26.9967 2.81669 28.4359 1.875 29.9959 1.875Z" fill="#F2BC00" stroke="#302C2D" stroke-width="3"/>
+                <path d="M29.7656 17.8125C28.2019 17.8125 27.1289 19.156 27.1289 20.8259V34.8884C27.1289 36.5583 28.3044 37.9018 29.7656 37.9018C31.2268 37.9018 32.4023 36.5583 32.4023 34.8884V20.8259C32.4023 19.156 31.3293 17.8125 29.7656 17.8125ZM33.2813 45.9375C33.2813 44.8719 32.9109 43.8499 32.2515 43.0964C31.5922 42.343 31.4647 41.9196 29.7656 41.9196C28.8332 41.9196 27.939 42.343 27.2797 43.0964C26.6204 43.8499 26.25 44.8719 26.25 45.9375C26.25 47.0031 26.6204 48.0251 27.2797 48.7786C27.939 49.532 28.8332 49.9554 29.7656 49.9554C30.698 49.9554 31.5922 49.532 32.2515 48.7786C32.9109 48.0251 33.2813 47.0031 33.2813 45.9375Z" fill="#302C2D"/>
+                <path d="M29.7656 17.8125C28.2019 17.8125 27.1289 19.156 27.1289 20.8259V34.8884C27.1289 36.5583 28.3044 37.9018 29.7656 37.9018C31.2268 37.9018 32.4023 36.5583 32.4023 34.8884V20.8259C32.4023 19.156 31.3293 17.8125 29.7656 17.8125Z" fill="#302C2D"/>
+                <path d="M33.2813 45.9375C33.2813 44.8719 32.9109 43.8499 32.2515 43.0964C31.5922 42.343 31.4647 41.9196 29.7656 41.9196C28.8332 41.9196 27.939 42.343 27.2797 43.0964C26.6204 43.8499 26.25 44.8719 26.25 45.9375C26.25 47.0031 26.6204 48.0251 27.2797 48.7786C27.939 49.532 28.8332 49.9554 29.7656 49.9554C30.698 49.9554 31.5922 49.532 32.2515 48.7786C32.9109 48.0251 33.2813 47.0031 33.2813 45.9375Z" fill="#302C2D"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_110_1504">
+                <rect width="60" height="60" fill="white"/>
+                </clipPath>
+                </defs>  
+            </g>
+                
+                
+                                                                                      
         </svg>
         <p>Image Credit: Stephen Breslin</p>
     </div>
